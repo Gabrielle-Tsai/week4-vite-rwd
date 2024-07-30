@@ -1,0 +1,54 @@
+.nav {
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.brand-logo {
+  width: 80px;
+  height: auto;
+}
+
+.nav-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 16px 32px;
+  position: relative;
+  transition: ease-in 0.25s;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+@media (max-width: 576px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 0 0;
+    margin-right: -12px;
+    margin-left: -12px;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav-item {
+    width: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+  }
+
+  .brand-logo {
+    margin-bottom: 16px;
+    margin-left: 15px;
+  }
+}

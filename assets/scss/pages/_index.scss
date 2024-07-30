@@ -1,0 +1,268 @@
+.banner {
+  background: url('../assets/images/home-header.png');
+  height: 787px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-intro {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.banner-intro h2 {
+  font-size: 64px;
+  line-height: 1.5;
+  color: #650300;
+  font-weight: 700;
+}
+
+.banner-intro p {
+  font-size: 36px;
+  line-height: 1.5;
+  color: #650300;
+}
+
+@media (max-width: 576px) {
+  .banner {
+    height: 396px;
+  }
+
+  .banner-intro p {
+    font-size: 16px;
+  }
+
+  .banner-intro h2 {
+    font-size: 24px;
+  }
+}
+
+.btn {
+  padding: 6px 12px;
+  background: #AA0601;
+  color: #fff;
+  border: 1px solid #AA0601;
+  cursor: pointer;
+  transition: ease-in 0.15s;
+}
+
+.btn:hover {
+  background: rgba(170, 6, 1, 0.25);
+  border: 1px solid #AA0601;
+  color: #fff;
+}
+
+/* section 2 */
+h3,
+.frame .card h4 {
+  font-size: 48px;
+  line-height: 1.5;
+  color: #650300;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 576px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.column {
+  padding: 0 12px;
+  width: 25%;
+}
+
+@media (max-width: 576px) {
+  .column {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  color: #650300;
+}
+
+.card h4 {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.card .material-icons-outlined {
+  display: block;
+  font-size: 84px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+/* section 3: frame*/
+.frame .column {
+  width: 33.3333%;
+}
+
+.frame .card h3 {
+  color: #AA0601;
+  font-style: italic;
+}
+
+@media (max-width: 992px) {
+  .frame .column {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .frame .card h3 {
+    font-size: 48px;
+  }
+}
+
+/* section 4: feat. frame */
+.feat-frame {
+  background: url('../assets/images/index-bg.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.feat-frame h3 {
+  color: #fff;
+}
+
+.feat-frame .column {
+  width: 50%;
+  padding: 0 12px;
+}
+
+.feat-frame .card h4 {
+  color: #AA0601;
+  font-style: italic;
+  background: #fff;
+  padding: 8px 0;
+  border-right: 1px solid #00000029;
+}
+
+@media (max-width: 576px) {
+  .feat-frame .card h4 {
+    margin-bottom: 0;
+    font-size: 48px;
+  }
+
+  .feat-frame .column {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
+
+/* section 5: customer recommend */
+.recommend .card {
+  box-shadow: 0 2px 6px 0 #00000029;
+  min-height: 511px;
+  height: 100%;
+}
+
+.recommend .card-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.recommend .card h4 {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  text-align: left;
+}
+
+.recommend .date {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #707070;
+  margin-top: auto;
+}
+
+@media (max-width: 576px) {
+  .recommend .column {
+    margin-bottom: 16px;
+  }
+}
+
+/* section 6: contact */
+.contact .column {
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  .contact .column {
+    width: 100%;
+  }
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.contact label {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.contact input,
+.contact textarea {
+  border: 1px solid #000000;
+  margin-bottom: 16px;
+  padding: 6px 12px;
+  color: rgba(0, 0, 0, 0.2);
+  background: transparent;
+}
+
+.contact textarea {
+  resize: none;
+  height: 136px;
+  background: transparent;
+}
+
+.contact .btn {
+  display: block;
+  width: 416px;
+  padding: 16px 0;
+  margin: 48px auto 0 auto;
+}
+
+@media (max-width: 576px) {
+  .contact .btn {
+    width: 100%;
+  }
+}
