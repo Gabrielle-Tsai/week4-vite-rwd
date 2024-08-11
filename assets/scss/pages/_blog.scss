@@ -1,0 +1,225 @@
+.category-bar {
+    padding: 13px 0;
+}
+
+.blog-category {
+    display: flex;
+
+    .search {
+        margin-left: auto;
+        font-size: 29px;
+        background: transparent;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover {
+            background: rgba(255, 255, 255,0.7);
+        }
+    }
+}
+
+.category-list {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+
+    li a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        margin-right: 48px;
+        font-size: 20px;
+        line-height: 1.5;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.blog {
+    padding: 0 0 64px;
+}
+
+.blog .column {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.article {
+    display: flex;
+    margin-right: -12px;
+    margin-left: -12px;
+    text-decoration: none;
+    color: #000;
+
+    img {
+        width: 50%;
+        padding: 0 12px;
+        object-fit: cover;
+        aspect-ratio: 336 / 208;
+    }
+    .article-body {
+        display: flex;
+        flex-direction: column;
+        padding: 0 12px;
+        top: 0;
+        bottom: 0;
+
+        .article-title {
+            font-size: 32px;
+            line-height: 1.5;
+            color: #650300;
+        }
+        .article-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+
+            p {
+                color: #000;
+                font-size: 20px;
+                line-height: 1.5;
+            }
+            date {
+                color: rgba(0,0,0,0.7);
+            }
+        }
+        .article-digest {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+
+            p {
+                color: #555555;
+                font-size: 20px;
+                line-height: 1.5;
+            }
+
+            .read-more {
+                color: #650300;
+                font-size: 36px;
+                font-weight: 900;
+                line-height: 1.5;
+                text-decoration: none;
+                margin-left: auto;
+                margin-top: auto;
+                border-bottom: 2px solid transparent;
+                text-transform: capitalize;
+            }
+            
+            .read-more:hover {
+                border-bottom: 2px solid #650300;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 992px) {
+    .article {
+        .article-body {
+            .article-title {
+                font-size: 24px;
+            }
+            .article-info {
+                font-size: 16px;
+            }
+            .article-digest {
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .category-bar {
+        display: none;
+    }
+
+    .blog {
+        padding: 0 0 40px;
+    }
+
+    .blog .column {
+        margin-bottom: 24px;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 100%;
+            margin-bottom: 8px;
+        }
+
+        .article-body {
+            .article-digest {
+                display: none;
+            }
+        }
+    }
+}
+
+.paginator {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+
+    li {
+        border: 1px solid #555555;
+        
+        button {
+            display: block;
+            padding: 11px 12px;
+            border: none;
+            background: #fff;
+            font-size: 19px;
+            line-height: 29px;
+            color: #555;
+            cursor: pointer;
+        }
+
+        a {
+            display: block;
+            padding: 12px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 27px;
+            color: #555;
+
+            &:hover {
+                background: #000;
+                color: #fff;
+            }
+        }
+    }
+
+    li:last-child {
+        button {
+            background: #F2F2F2;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .paginator {
+        margin-bottom: 64px;
+        li {
+            button {
+                font-size: 16px;
+                line-height: 26px;
+            }
+
+            a {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+        }
+    }
+}
