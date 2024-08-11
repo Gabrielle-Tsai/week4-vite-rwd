@@ -1,0 +1,87 @@
+.area-label {
+    font-size: 24px;
+    margin-right: 16px;
+    line-height: 1.5;
+}
+
+.select-wrapper {
+    display: inline-block;
+    position: relative;
+
+    .area-select {
+        border: 1px solid #CED4DA;
+        padding: 6px 12px;
+        width: 304px;
+        color: #495057;
+        font-size: 18px;
+        line-height: 26px;
+        appearance: none;
+    }
+
+    &::after {
+        content: '\e5c5';
+        font-family: 'Material Icons Outlined';
+        position: absolute;
+        color: #000;
+        right: 12px;
+        top: 10px;
+        font-size: 18px;
+    }
+}
+
+
+
+// Store card deck
+.store {
+    padding: 40px 0 80px;
+}
+
+.store .column {
+    width: 33.333%;
+    margin-bottom: 48px;
+}
+
+.store .column .card {
+    border: 1px solid #00000020;
+}
+
+.store .card {
+    .card-title {
+        border-bottom: 1px solid #00000020;
+        font-size: 24px;
+        line-height: 1.5;
+        color: #212529;
+        padding: 8px 24px;
+    }
+
+    .card-body {
+        padding: 16px 28px;
+
+        p {
+            margin-bottom: 8px;
+        }
+        .material-icons-outlined {
+            font-size: 18px;
+            color: #000;
+            margin-right: 11px;
+            display: inline-block;
+            margin-bottom: 0;
+            vertical-align: sub;
+        }
+    }
+    
+    .card-footer {
+        .detail-btn {
+            display: block;
+            background: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+            transition: ease-in 0.15s;
+        }
+        .detail-btn:hover {
+            background: rgba(0,0,0, 0.8);
+        }
+    }
+}
