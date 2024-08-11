@@ -1,18 +1,26 @@
+.area-wrapper {
+    display: flex;
+    width: 416px;
+    align-items: center;
+}
+
 .area-label {
     font-size: 24px;
     margin-right: 16px;
     line-height: 1.5;
+    flex-shrink: 0;
 }
 
 .select-wrapper {
     display: inline-block;
     position: relative;
+    width: 100%;
 
     .area-select {
         border: 1px solid #CED4DA;
         padding: 6px 12px;
-        width: 304px;
         color: #495057;
+        width: 100%;
         font-size: 18px;
         line-height: 26px;
         appearance: none;
@@ -29,6 +37,16 @@
     }
 }
 
+@media (max-width: 576px) {
+    .area-wrapper {
+        width: 100%;
+    }
+    .area-label {
+        font-size: 16px;
+        margin-right: 8px;
+    }
+}
+
 
 
 // Store card deck
@@ -39,6 +57,23 @@
 .store .column {
     width: 33.333%;
     margin-bottom: 48px;
+}
+
+@media (max-width: 768px) {
+    .store .column {
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .store {
+        padding: 24px 0 40px;
+    }
+
+    .store .column {
+        width: 100%;
+        margin-bottom: 24px;
+    }
 }
 
 .store .column .card {
