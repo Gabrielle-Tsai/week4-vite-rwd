@@ -3,7 +3,7 @@ section {
 }
 
 .banner {
-  background: url('../assets/images/home-header.png');
+  background: url('../images/home-header.png');
   height: 787px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -61,6 +61,13 @@ section {
 }
 
 /* section 2 */
+.feature .column {
+  @include pad {
+    width: 50%;
+    margin-bottom: 24px;
+  }
+}
+
 h3,
 .frame .card h4 {
   font-size: 48px;
@@ -146,7 +153,7 @@ h3,
 
 /* section 4: feat. frame */
 .feat-frame {
-  background: url('../assets/images/index-bg.png');
+  background: url('../images/index-bg.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -182,6 +189,13 @@ h3,
 }
 
 /* section 5: customer recommend */
+.recommend .column {
+  @include pad {
+    width: 50%;
+    margin-bottom: 24px;
+  }
+}
+
 .recommend .card {
   box-shadow: 0 2px 6px 0 #00000029;
   min-height: 511px;
@@ -192,6 +206,7 @@ h3,
   padding: 16px;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .recommend .card h4 {
@@ -260,7 +275,7 @@ h3,
 
 .contact .btn {
   display: block;
-  width: 416px;
+  width: calc((4/6 * 100%) + 72px);
   padding: 16px 0;
   margin: 48px auto 0 auto;
 }

@@ -1,3 +1,7 @@
+@import "./base/reset";
+@import "./base/mixin";
+@import "./base/custom";
+
 @import './layout/global.scss';
 @import './layout/navbar.scss';
 @import './layout/footer.scss';

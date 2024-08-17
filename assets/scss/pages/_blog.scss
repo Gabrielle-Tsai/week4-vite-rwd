@@ -108,6 +108,10 @@
                 margin-top: auto;
                 border-bottom: 2px solid transparent;
                 text-transform: capitalize;
+
+                @include pad {
+                    display: none;
+                }
             }
             
             .read-more:hover {
@@ -136,6 +140,10 @@
     }
 }
 
+.pad-more {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .category-bar {
         display: none;
@@ -149,6 +157,13 @@
         margin-bottom: 24px;
     }
 
+    .pad-more {
+        display: inline;
+    }
+}
+
+
+@media (max-width: 576px) {
     .article {
         display: flex;
         flex-direction: column;
@@ -194,6 +209,11 @@
             color: #555;
 
             &:hover {
+                background: #000;
+                color: #fff;
+            }
+
+            &.active {
                 background: #000;
                 color: #fff;
             }

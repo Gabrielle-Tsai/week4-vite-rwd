@@ -2,29 +2,46 @@
 .footer {
   padding: 48px 0 32px 0;
   color: #fff;
+
+  @include pad {
+    padding: 36px;
+  }
+
+  @include mobile {
+    padding: 24px 0;
+  }
 }
 
 .footer .nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 26.98px;
+  position: relative;
+
+  @include pad {
+    padding: 0;
+    margin-bottom: 22.98px;
+    justify-content: flex-start;
+  }
+
+  @include mobile {
+    margin-bottom: 0;
+  }
 }
 
 .footer-nav {
   display: flex;
-}
-
-@media (max-width: 576px) {
-  .footer {
-    padding: 24px 0;
+  align-items: center;
+  
+  @include pad {
+    width: 100%;
+    padding: 0 12px;
+    margin-bottom: 12px;
   }
 
-  .footer .nav {
-    position: relative;
-    padding: 0;
-  }
-
-  .footer-nav {
+  @include mobile {
     display: none;
   }
 }
@@ -32,21 +49,31 @@
 .footer .social-media {
   display: flex;
   gap: 32px;
+  
+  @include pad {
+    position: relative;
+    top: unset;
+    right: unset;
+  }
+  
+  @include mobile {
+    gap: 8px;
+    position: absolute;
+    top: 0px;
+    right: 12px;
+  }
 }
 
 .footer .social-media img {
   width: 48px;
   height: 48px;
-}
 
-@media (max-width: 576px) {
-  .footer .social-media {
-    position: absolute;
-    top: 0;
-    right: 12px;
+  @include pad {
+    width: 40px;
+    height: 40px;
   }
 
-  .footer .social-media img {
+  @include mobile {
     width: 24px;
     height: 24px;
   }
@@ -77,7 +104,6 @@
 }
 
 @media (max-width: 576px) {
-
   .footer .contact-info li a,
   .footer .contact-info li span {
     font-size: 16px;
@@ -90,6 +116,10 @@
   text-decoration: none;
   margin-right: 48px;
   border-bottom: 2px solid transparent;
+
+  @include pad {
+    margin-right: 40px;
+  }
 }
 
 .footer-nav a:hover,
@@ -99,6 +129,10 @@
 
 .footer hr {
   margin: 32px 0;
+
+  @include mobile {
+    margin: 24px 0 16px;
+  }
 }
 
 .footer .copyright {
@@ -107,29 +141,24 @@
   align-items: center;
 }
 
-@media (max-width: 576px) {
-  .footer hr {
-    margin: 24px 0 16px;
-  }
-
+@media (max-width: 614px) {
   .footer .copyright {
     flex-direction: column;
     align-items: flex-start;
-  }
 
-  .footer .copyright p {
-    margin-bottom: 8px;
+    p {
+      margin-bottom: 8px;
+    }
   }
 
   .footer .policy ul {
     flex-direction: column;
-  }
-
-  .footer .policy ul li {
-    margin-bottom: 8px;
+    li {
+      margin-bottom: 8px;
+    }
   }
 }
 
-.policy li:last-child a {
-  margin-right: 0;
+.footer .policy li:last-child a {
+    margin-right: 0;
 }
